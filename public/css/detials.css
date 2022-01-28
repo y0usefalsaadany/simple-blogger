@@ -1,0 +1,101 @@
+/* Global Ruls */
+:root {
+    --main-color: #01fe87;
+    --main-bg: #383d52;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0,.3);
+    --main-trans: .3s
+}
+
+/* ===== Start about Detials Style ===== */
+.detials .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detials .box .delete {
+    margin-top: 15px;
+    padding: 5px 15px;
+    background-color: var(--main-color);
+    border: 0;
+    border-radius: 6px;
+    color: var(--main-bg);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--main-trans);
+}
+
+.detials .box .delete:hover {
+    background: none;
+    box-shadow: var(--box-shadow);
+    color: var(--main-color);
+}
+
+.detials .card-box {
+    transition: var(--main-trans);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.detials .card-box a {
+    position: absolute;
+    top: -13px;
+    left: 18px;
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+.detials .card-box .card-info {
+    margin-top: 10px;
+}
+
+.detials .card-box .card-info h2 {
+    color: var(--main-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.detials .card-box .card-info .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detials .card-box .card-info .content p {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 400;
+    flex: 1;
+    line-height: 2;
+    letter-spacing: 1px;
+    padding: 15px 20px;
+}
+
+.detials .card-box .card-info .content a {
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: var(--main-trans);
+}
+
+.detials .card-box .card-info .content a:hover {
+    background-color: var(--main-bg);
+    color: var(--main-color);
+    box-shadow: var(--box-shadow);
+}
+
+.detials .card-box span {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--main-color);
+    color: var(--main-bg);
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
